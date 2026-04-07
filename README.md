@@ -32,7 +32,7 @@ A total of **25 vegetation sample points** were collected on **March 20, 2026**,
 ## Data Collection
 
 The field form was configured in **ArcGIS Field Maps Designer** and captured the following attributes for each sample point:
-
+![Form](form.png)
 - **Date and Time** – timestamp of data collection
 - **Plant Form** – tree or shrub (dropdown, required)
 - **Plant Growth Status** – active growth or dormant (required)
@@ -40,20 +40,23 @@ The field form was configured in **ArcGIS Field Maps Designer** and captured the
 - **Height (m)** – estimated vegetation height (required)
 - **Horizontal Accuracy (m)** – GPS positional accuracy at time of collection
 - **Photo** – field photograph of each specimen
-- 
 
-![Uploading Vegetation Survey of the University of Saskatchewan Campus.jpg…]()
 
+![Vegetation Survey Map](Study%20sites.png)
 ---
 
 ## Analysis
 
 ### Positional Accuracy Assessment
 A buffer analysis was performed in ArcGIS Online Map Viewer using the **Create Buffers** tool. Each of the 25 sample points was buffered using the recorded horizontal accuracy value to assess GPS precision across the campus.
+![Study Sites Map](Study%20sites%202.png)
 
 ### Vegetation Characteristics
 - **Plant Form Distribution**: 68% trees (17 points), 32% shrubs (8 points)
+- ![Chart 1](chart%201.png)
+
 - **Plant Growth Status**: A significant proportion of vegetation — particularly trees — was still dormant at the time of the March 20 survey, consistent with early growing season conditions in Saskatoon
+![Chart 2](chart%202.png)
 
 The following Arcade expression was used in the web map for dynamic label display:
 
